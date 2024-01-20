@@ -46,7 +46,7 @@ alias pico2='picocom -b 115200 /dev/ttyUSB2'
 alias pico3='picocom -b 115200 /dev/ttyUSB3'
 
 # USB bind/unbind, check usb tree with alias below or: `lsusb -tv` and in `dmesg` eg. usb 1-7.2.2
-alias getphysicalttyusbaddress='getphysicalttyUSBaddress_fun() { udevadm info --query=path --name=/dev/ttyUSB"$1" | awk -F/ "{print \$(NF-4)}"; }; getphysicalttyUSBaddress_fun'
+alias getphysicalusbaddress='getphysicalusbaddress_fun() { udevadm info --query=path --name="$1" | awk -F/ "{print \$(NF-4)}"; }; getphysicalusbaddress_fun'
 
 
 # Graphic things
