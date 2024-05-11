@@ -59,3 +59,6 @@ alias tailscale_turnon='sudo tailscale up'
 alias tailscale_turnoff='sudo tailscale down'
 alias tailscale_logout='sudo tailscale logout'
 alias tailscale_login='sudo tailscale login'
+
+# Ntfy
+alias ntfy='ntfy_fun(){ $* && curl -d "Cmd: $* was successful" 192.168.0.64/laptop || curl -d "Cmd: $* failed." 192.168.0.64/laptop; }; ntfy_fun'
