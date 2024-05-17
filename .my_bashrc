@@ -24,7 +24,9 @@ alias umountofficedisk='sudo umount /mnt/office_pc_home'
 alias mkcd='function mkcdf(){ mkdir "$1"; cd "$1"; }; mkcdf'
 alias duhere='du --all -h -d 1 | sort -h'
 alias copy_last_command='history -p '!!' | xclip -sel clip'
-
+alias pbcopy='tee >(xsel --input --clipboard)'
+alias pbcopy_silent='xsel --input --clipboard'
+alias pbpaste='xsel --output --clipboard'
 
 # Useful scripts
 alias fileToHexArray='hexdump -v -e "/1 \"0x%02X, \"" $1'
