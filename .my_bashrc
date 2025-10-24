@@ -32,14 +32,10 @@ alias pbpaste='xsel --output --clipboard'
 alias fileToHexArray='hexdump -v -e "/1 \"0x%02X, \"" $1'
 
 
-
 ## ------ESP32----------
 alias get_idf='. $HOME/Documents/my_files/esp32/esp-idf/export.sh'
 alias cdesp32='cd $HOME/Documents/my_files/esp32/'
 
-
-## ------RPI-----------
-alias ssh_to_rpi='$HOME/Documents/my_files/scripts/ssh_to_rpi.sh'
 
 # Serial connections
 alias pico0='picocom -b 115200 /dev/ttyUSB0'
